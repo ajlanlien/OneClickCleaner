@@ -1,12 +1,13 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
 public class Schedule
 {
 	public Schedule()
 	{
-		public string MyTime { get; set; }
+
 	}
+
+	[Required]
+	public string MyTime { get; set; }
 }

@@ -1,4 +1,10 @@
-﻿<section id="bookingpage">
+﻿@model Schedule
+@{
+    ViewBag.Title = "Booking";
+    Layout = "_Layout";
+}
+
+<section id="bookingpage">
     <div class="rowb">
         <section id="features">
             <div class="justify-content-center">
@@ -9,7 +15,7 @@
                 <p>
                     Our booking service cleaner provides a high quality of <br />
                     service. First, you have to pick one of the locations in <br />
-                    dropdown area, then you pick how long you need a cleaner, <br /> 
+                    dropdown area, then you pick how long you need a cleaner, <br />
                     after that, you choose the day and we will provide the total <br />
                     price for the service.
                 </p>
@@ -23,7 +29,7 @@
                 <legend>Select Time</legend>
                 <label>Time Prefered</label>
                 <select id="MyTime" asp-for="MyTime" required>
-                    <option disabled selected >--Choose The Time prefered--</option>
+                    <option disabled selected>--Choose The Time prefered--</option>
                     <option value="Morning">Morning</option>
                     <option value="AfterNoon">Afternoon</option>
                     <option value="Evening">Evening</option>

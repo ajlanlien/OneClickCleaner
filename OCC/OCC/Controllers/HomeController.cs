@@ -20,7 +20,7 @@ namespace OCC.Controllers
             return View();
         }
 
-        [HttpPost]
+
         public ViewResult Booking()
         {
 
