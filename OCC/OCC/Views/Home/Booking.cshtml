@@ -1,8 +1,40 @@
 ﻿<section id="bookingpage">
     <div class="rowb">
-
-        <h1>Booking Page</h1>
-
+        <section id="features">
+            <div class="justify-content-center">
+                <h2><img id="booking_service" src="~/images/service.png" /> Booking Service</h2>
+                <br />
+            </div>
+            <div class="justify-content-start">
+                <p>
+                    Our booking service cleaner provides a high quality of <br />
+                    service. First, you have to pick one of the locations in <br />
+                    dropdown area, then you pick how long you need a cleaner, <br /> 
+                    after that, you choose the day and we will provide the total <br />
+                    price for the service.
+                </p>
+            </div>
+        </section>
     </div>
+
+    <section id="ChoosingTheTime">
+        <div class="justify-content-center">
+            <fieldset>
+                <legend>Select Time</legend>
+                <label>Time Prefered</label>
+                <select id="MyTime" asp-for="MyTime" required>
+                    <option disabled selected >--Choose The Time prefered--</option>
+                    <option value="Morning">Morning</option>
+                    <option value="AfterNoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                    <option value="Night">Night</option>
+                </select>
+
+                <br />
+                <button class="button" type="submit">Continue</button>
+
+            </fieldset>
+        </div>
+    </section>
 
 </section>

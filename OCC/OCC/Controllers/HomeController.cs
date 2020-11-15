@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Internal;
+using OCC.Models;
 
 namespace OCC.Controllers
 {
@@ -19,8 +20,10 @@ namespace OCC.Controllers
             return View();
         }
 
+        [HttpPost]
         public ViewResult Booking()
         {
+
             return View();
         }
 
