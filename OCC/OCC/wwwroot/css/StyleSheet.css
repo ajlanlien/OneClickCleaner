@@ -1,4 +1,8 @@
-﻿#mainpage {
+﻿body{
+    font: awesome;
+    font-color: blue;
+}
+#mainpage {
     background-color: #4e89ae;
     text-align: center;
     font-size: 50px;
